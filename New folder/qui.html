@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+     <title>QUIZ APPLICATION</title>
+  </head>
+  <body>
+  Q1. WHERE IS CAPITAL OF JAPAN?<br>
+<input type="radio"name="question1" id="correct1" >TOKYO<br>
+<input type="radio"name="question1">BEIJING<br>
+<input type="radio"name="question1">FURUTO<br>
+<input type="radio"name="question1">DELHI<br>
+
+Q2. WHERE IS CAPITAL OF FRANCE?<br>
+<input type="radio"name="question2" id="correct2" >PARIS<br>
+<input type="radio"name="question2">LONDON<br>
+<input type="radio"name="question2">MUMBAI<br>
+<input type="radio"name="question2">RIYADH<br>
+
+Q3. HOW MANY STATES IN USA?<br>
+<input type="radio"name="question3">45<br>
+<input type="radio"name="question3" id="correct3" >50<br>
+<input type="radio"name="question3">65<br>
+<input type="radio"name="question3">51<br>
+
+Q4. WHO IS FIRST PRIME MINISTER OF INDIA?<br>
+<input type="radio"name="question4">LAL BAHADUR SHASTRI<br>
+<input type="radio"name="question4" id="correct4" >JAWAHER LAL NEHRU<br>
+<input type="radio"name="question4">ATAL VIHARI VAJPEYI<br>
+<input type="radio"name="question4">NARENDRA MODI<br>
+
+Q5. WHO IS FIRST FEMALE PRESSIDENT OF BRAZIL?<br>
+<input type="radio"name="question5" id="correct5" >DILMA ROUSEFF<br>
+<input type="radio"name="question5">INDIRA GANDHI<br>
+<input type="radio"name="question5">MARGARET THACHER<br>
+<input type="radio"name="question5">GOLDA MEIR<br>
+
+Q6. WHO IS CURRENT FINANCE MINISTER OF INDIA?<br>
+<input type="radio"name="question6">RAJNATH SINGH<br>
+<input type="radio"name="question6" id="correct6" >NIRMALA SITARAMAN<br>
+<input type="radio"name="question6">SMRITI IRANI<br>
+<input type="radio"name="question6">AMIT SHAH<br>
+
+<input type="submit"name="submit"value="SubmitQUIZ" onclick="result()">
+<script type="text/javascript">
+function result() {
+  //body...
+  var score=0;
+      if (document.getElementById('correct1').checked)
+  {
+   score++;
+  }
+   if (document.getElementById('correct2').checked)
+  {
+   score++;
+  }
+   if (document.getElementById('correct3').checked)
+  {
+   score++;
+  }
+   if (document.getElementById('correct4').checked)
+  {
+   score++;
+  }
+   if (document.getElementById('correct5').checked)
+  {
+   score++;
+  }
+   if (document.getElementById('correct6').checked)
+  {
+   score++;
+  }
+  alert("your score is:"+score);
+}s 
+
+</script>
+</body>
+</html>
